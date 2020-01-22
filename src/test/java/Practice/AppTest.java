@@ -2,6 +2,7 @@ package Practice;
 
 import static org.junit.Assert.assertTrue;
 
+import Practice.pages.LandingPage;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -31,23 +32,8 @@ public class AppTest {
 
     public void testNavToCart() {
 
-        driver.getCurrentUrl();
-        while (true) {
-            List<WebElement> elements = driver.findElements(By.cssSelector(".welcome-section .container-fluid .moving-card-carousel .inner-box h3 a"));
-
-            for (WebElement element : elements
-                    ) {
-                if (element.getText().equals("PRACTICE PROJECT"))
-                { element.click();
-                    System.out.println(element.getText());
-                }
-                else
-                {System.out.println(element.getText());
-
-                }
-
-            }
-        }
+        LandingPage landingPage = new LandingPage(driver);
+        landingPage.navigateToLanding();
 
     }
 
