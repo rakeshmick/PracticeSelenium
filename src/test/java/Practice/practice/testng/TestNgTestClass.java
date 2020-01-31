@@ -32,7 +32,7 @@ public class TestNgTestClass extends BaseTest{
     }*/
     @AfterMethod
     public void testDown(){
-       
+
         driver.quit();
     }
 }
