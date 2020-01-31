@@ -17,7 +17,7 @@ import java.util.List;
 /**
  * Unit test for simple App.
  */
-public class FixOverlayIssue {
+public class FixOverlayIssue_ClickAcademy {
 
     WebDriver driver;
 
@@ -36,8 +36,7 @@ public class FixOverlayIssue {
 
     @Before
     public void setUp() {
-    	System.setProperty("webdriver.chrome.driver", "C:\\Rakesh\\sw\\chromedriver_win32\\chromedriver.exe");
-        driver = new ChromeDriver();
+    	 driver = new ChromeDriver();
         driver.get("http://www.qaclickacademy.com/interview.php");
         
     }

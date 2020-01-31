@@ -3,6 +3,7 @@ package Practice;
 import static org.junit.Assert.assertTrue;
 
 import Practice.pages.LandingPage;
+import junit.framework.Assert;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -34,6 +35,7 @@ public class AppTest {
 
         LandingPage landingPage = new LandingPage(driver);
         landingPage.navigateToLanding();
+        Assert.assertEquals("Rahul Shetty Academy",driver.getTitle());
 
     }
 
