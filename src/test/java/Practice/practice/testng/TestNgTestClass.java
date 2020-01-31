@@ -10,8 +10,8 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 
-public class TestNgTestClass {
-WebDriver driver;
+public class TestNgTestClass extends BaseTest{
+
 
 
 
@@ -25,14 +25,14 @@ WebDriver driver;
 
     }
 
-    @BeforeMethod
+   /* @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
         driver.get("https://www.rahulshettyacademy.com/");
-    }
+    }*/
     @AfterMethod
     public void testDown(){
-        driver.close();
+       
         driver.quit();
     }
 }
