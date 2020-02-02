@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" parallel="false">
+    <parameter name="baseUrl" value="https://rahulshettyacademy.com/seleniumPractise/#/"></parameter>
+    <test name="RegressionOne">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="Practice.practice.testng.ekart.tests.HomePageTest"/>
+        </classes>
+    </test>
+</suite>
