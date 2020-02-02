@@ -13,8 +13,6 @@ import org.testng.annotations.Test;
 public class TestNgTestClass extends BaseTest{
 
 
-
-
     @Test
 
     public void testNavToCart() {
@@ -25,11 +23,6 @@ public class TestNgTestClass extends BaseTest{
 
     }
 
-   /* @BeforeMethod
-    public void setUp() {
-        driver = new ChromeDriver();
-        driver.get("https://www.rahulshettyacademy.com/");
-    }*/
     @AfterMethod
     public void testDown(){
 

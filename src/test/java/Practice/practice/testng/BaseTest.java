@@ -5,6 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestContext;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 
 public class BaseTest {
@@ -40,5 +41,10 @@ public class BaseTest {
         driver.get(baseUrl);
         System.out.println("Opened : "+driver.getCurrentUrl());
 
+    }
+
+    @AfterTest
+    public void tearDown(){
+        driver.quit();
     }
 }
